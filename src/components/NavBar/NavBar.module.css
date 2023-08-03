@@ -1,4 +1,6 @@
 .nav {
+  position: relative;
+  padding: 15px;
   background-color: rgb(116, 116, 240);
   grid-area: n;
   font-size: 20px;
@@ -13,4 +15,13 @@
 .item a.active{
   color: gold;
   text-decoration: none;
+}
+
+.friends{
+  display: none;
+  position: absolute;
+  top: 60%;
+  font-size: 30px;
+  left: 15px;
+  color: white;
 }

@@ -1,21 +1,70 @@
 .dialogs {
+    position: relative;
     display: grid;
     grid-template-columns: 2fr 10fr;
 }
 
 .dialogsItem {
-    padding: 10px;
+    padding: 12px;
+    border-right: 2px solid rgb(124, 115, 115);
 }
 
-.dialog  a {
+.dialog {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.dialogs a {
     text-decoration: none;
-    font-size: 15px;
     color: #fff;
+    transition: color .2s ease-in-out;
 }
 
-.messages {
-    padding: 10px;
+.dialogs a.active {
+    color: black;
+}
+
+.dialogs a:hover {
+    color: #f8df01;
+}
+
+.dialogs img {
+    height: 30px;
+    width: 30px;
 }
 
 .message {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: whitesmoke;
+    padding: 13px;
+}
+
+.messages {
+    position: relative;
+}
+
+.secondMessages {
+    position: absolute;
+    right: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: whitesmoke;
+    padding: 13px;
+}
+
+.addmessage {
+    margin-top: 123px;
+    padding-left: 15px;
+}
+
+.addmessage textarea {
+    width: 300px;
+    resize: none;
 }
